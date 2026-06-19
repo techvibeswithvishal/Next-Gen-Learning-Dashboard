@@ -1,3 +1,77 @@
+frontend/
+│
+├── app/
+│   ├── layout.tsx
+│   ├── page.tsx          // Server Component
+│   ├── loading.tsx
+│   ├── error.tsx
+│   └── globals.css
+│
+├── components/
+│   │
+│   ├── dashboard/
+│   │   ├── BentoGrid.tsx
+│   │   ├── HeroTile.tsx
+│   │   ├── CourseCard.tsx
+│   │   ├── ActivityTile.tsx
+│   │   └── ProgressBar.tsx
+│   │
+│   ├── navigation/
+│   │   ├── Sidebar.tsx
+│   │   ├── SidebarItem.tsx
+│   │   └── MobileNav.tsx
+│   │
+│   ├── animations/
+│   │   ├── StaggerContainer.tsx
+│   │   ├── MotionCard.tsx
+│   │   └── AnimatedProgress.tsx
+│   │
+│   └── skeletons/
+│       ├── CourseSkeleton.tsx
+│       ├── HeroSkeleton.tsx
+│       ├── ActivitySkeleton.tsx
+│       └── DashboardSkeleton.tsx
+│
+├── lib/
+│   ├── supabase.ts
+│   ├── queries.ts
+│   └── iconMap.ts
+│
+├── types/
+│   └── course.ts
+│
+├── constants/
+│   └── navigation.ts
+│
+├── public/
+│   ├── textures/
+│   │   ├── grain.png
+│   │   └── noise.png
+│   │
+│   └── images/
+│
+├── .env.local
+├── .env.example
+├── .gitignore
+├── eslint.config.mjs
+├── next.config.ts
+├── postcss.config.mjs
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+└── README.md
+
+
+
+ listen chatgpt provide to me correct code accroding to my assignment carefully 
+
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
