@@ -13,9 +13,11 @@ interface Props {
 export default function CourseCard({
   course,
 }: Props) {
-  const Icon =
-    iconMap[course.icon_name] ||
-    iconMap.Code2;
+  
+    const Icon =
+  iconMap[
+    course.icon_name as keyof typeof iconMap
+  ] ?? iconMap.Code2;
 
   return (
     <MotionCard>
