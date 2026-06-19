@@ -8,37 +8,27 @@ interface Props {
   className?: string;
 }
 
-const itemVariants = {
-  hidden: {
-    opacity: 0,
-    y: 24,
-  },
-
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: "spring",
-      stiffness: 300,
-      damping: 20,
-    },
-  },
-};
-
 export default function MotionCard({
   children,
   className = "",
 }: Props) {
   return (
     <motion.div
-      variants={itemVariants}
-      whileHover={{
-        scale: 1.02,
+      initial={{
+        opacity: 0,
+        y: 24,
+      }}
+      animate={{
+        opacity: 1,
+        y: 0,
       }}
       transition={{
         type: "spring",
         stiffness: 300,
         damping: 20,
+      }}
+      whileHover={{
+        scale: 1.02,
       }}
       className={className}
     >
