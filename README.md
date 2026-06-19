@@ -94,77 +94,8 @@ Mobile:
 
 * Lucide React
 
----
+<img width="1317" height="501" alt="image" src="https://github.com/user-attachments/assets/59842cf8-9684-41a5-84c6-9256f1ef8c55" />
 
-## Project Structure
-
-frontend/
-
-├── app/
-
-│ ├── page.tsx
-
-│ ├── loading.tsx
-
-│ ├── error.tsx
-
-│ ├── analytics/page.tsx
-
-│ ├── courses/page.tsx
-
-│ ├── settings/page.tsx
-
-│ └── layout.tsx
-
-│
-
-├── components/
-
-│ ├── dashboard/
-
-│ ├── navigation/
-
-│ ├── animations/
-
-│ └── skeletons/
-
-│
-
-├── lib/
-
-│ ├── supabase.ts
-
-│ ├── queries.ts
-
-│ └── iconMap.ts
-
-│
-
-├── constants/
-
-├── types/
-
-├── public/
-
-├── .env.example
-
-└── README.md
-
----
-
-## Database Schema
-
-Table Name: courses
-
-```sql
-create table courses (
-  id uuid primary key default gen_random_uuid(),
-  title text not null,
-  progress integer not null,
-  icon_name text not null,
-  created_at timestamp default now()
-);
-```
 
 ### Sample Data
 
